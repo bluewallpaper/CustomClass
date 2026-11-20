@@ -11,17 +11,19 @@ public class VendingMachine {
    private String date;
    private int machineNumber;
    
-   
-   public ProductInformation() {
+   public VendingMachine() {
       productName = "Product Name";
       barCode = 0;
       price = 0.0;
       quantity = 0;
       randomProduct = false;
    }
-   public MachineInformation() {
-      location = "Null Location";
-      date = "Null Date";
-      machineNumber = 0;
+   public void machineInformation(String location, String date, int machineNumber) {
+      this.location = location;
+      this.date = date;
+      this.machineNumber = machineNumber;
+   }
+   public static void ThanksMessage() {
+      System.out.println("Thank you for buying with us");
    }
 }
