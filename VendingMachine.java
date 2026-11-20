@@ -40,9 +40,10 @@ public class VendingMachine {
    public static void MachineFeedback() { 
       System.out.println("How the machine went?");
    }
-   
-   public void main(String[] args) {
+   public static void HelloMessage() {
+      System.out.println("Hello");
+   }
+   public static void main(String[] args) {
       ThanksMessage();
-      PriceByTwo();
    }
 }
