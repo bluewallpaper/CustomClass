@@ -14,7 +14,7 @@ public class VendingMachine {
    public void ProductInformation() {
       productName = "Product Name";
       barCode = 0;
-      price = 0.0;
+      price = 4;
       quantity = 0;
       randomProduct = false;
    }
@@ -22,6 +22,11 @@ public class VendingMachine {
       this.location = location;
       this.date = date;
       this.machineNumber = machineNumber;
+   }
+   public double PriceByTwo() {
+      this.price = price;
+      double byTwo = price / 2;
+      return byTwo;
    }
    public static void ThanksMessage() {
       System.out.println("Thank you for buying with us.");
@@ -35,7 +40,9 @@ public class VendingMachine {
    public static void MachineFeedback() { 
       System.out.println("How the machine went?");
    }
-   public static void main(String[] args) {
+   
+   public void main(String[] args) {
       ThanksMessage();
+      PriceByTwo();
    }
 }
